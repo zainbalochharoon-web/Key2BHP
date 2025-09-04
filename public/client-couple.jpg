@@ -1,0 +1,9 @@
+This is a placeholder file for the client's image.
+
+To use the client's picture on the website:
+
+1. Save the client's image file as "client-couple.jpg" in this public folder
+2. The image should be high quality (recommended size: 800x600 pixels or larger)
+3. The image will automatically appear in the "Meet Our Team" section on the home page
+
+The image path in the code is: /client-couple.jpg
