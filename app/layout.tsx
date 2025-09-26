@@ -16,10 +16,14 @@ const openSans = Open_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Key 2 BHP Auto Locksmith Ltd - Professional Car Key & Auto Locksmith Services",
+  title:
+    "Key 2 BHP Auto Locksmith Ltd - Professional Car Key & Auto Locksmith Services",
   description:
     "Family-run auto locksmith business providing expert car key programming, lock replacement, and emergency unlock services. Fast response time you can trust.",
   generator: "v0.app",
+  icons: {
+    icon: "/favicon.png", // ✅ favicon added
+  },
 }
 
 // ✅ JSON-LD Schema
@@ -41,7 +45,8 @@ const schema = {
       "@id": "https://www.key2bhpautolocksmith.co.uk/#webpage",
       "url": "https://www.key2bhpautolocksmith.co.uk/",
       "name": "Key 2 BHP Auto Locksmith - Manchester Emergency Car Locksmith",
-      "description": "Trusted 24/7 emergency auto locksmith in Manchester. Car key programming, lockouts, ignition repair. Fast mobile response across Greater Manchester.",
+      "description":
+        "Trusted 24/7 emergency auto locksmith in Manchester. Car key programming, lockouts, ignition repair. Fast mobile response across Greater Manchester.",
       "isPartOf": {
         "@id": "https://www.key2bhpautolocksmith.co.uk/#website"
       },
@@ -69,9 +74,7 @@ const schema = {
         "availableLanguage": "English",
         "areaServed": "GB"
       },
-      "sameAs": [
-        "https://share.google/0lPYFJ5gusLZ2glkc"
-      ]
+      "sameAs": ["https://share.google/0lPYFJ5gusLZ2glkc"]
     },
     {
       "@type": "AutoService",
@@ -97,13 +100,20 @@ const schema = {
       },
       "areaServed": {
         "@type": "Place",
-        "name": "Manchester, Greater Manchester, Stockport, Tameside, Oldham, Salford, Rochdale, Bury, Bolton"
+        "name":
+          "Manchester, Greater Manchester, Stockport, Tameside, Oldham, Salford, Rochdale, Bury, Bolton"
       },
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": [
-            "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
           ],
           "opens": "00:00",
           "closes": "23:59"
@@ -113,32 +123,61 @@ const schema = {
         "@type": "OfferCatalog",
         "name": "Auto Locksmith Services",
         "itemListElement": [
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Vehicle Unlocking" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lost Car Key Replacement" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Car Key Programming" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Remote Key Fob Repair" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ignition Lock Repair" } }
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Emergency Vehicle Unlocking" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Lost Car Key Replacement" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Car Key Programming" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Remote Key Fob Repair" }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Ignition Lock Repair" }
+          }
         ]
       },
-      "paymentAccepted": ["Cash","Credit Card","Debit Card","Mobile Payment"],
+      "paymentAccepted": ["Cash", "Credit Card", "Debit Card", "Mobile Payment"],
       "review": {
         "@type": "Review",
         "author": { "@type": "Person", "name": "John D." },
         "datePublished": "2025-07-10",
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "reviewBody": "Fast and reliable locksmith service. Got me back into my car within 20 minutes. Highly recommended!"
+        "reviewBody":
+          "Fast and reliable locksmith service. Got me back into my car within 20 minutes. Highly recommended!"
       },
-      "sameAs": [
-        "https://share.google/0lPYFJ5gusLZ2glkc"
-      ]
+      "sameAs": ["https://share.google/0lPYFJ5gusLZ2glkc"]
     },
     {
       "@type": "BreadcrumbList",
       "@id": "https://www.key2bhpautolocksmith.co.uk/#breadcrumbs",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.key2bhpautolocksmith.co.uk/" },
-        { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.key2bhpautolocksmith.co.uk/services" },
-        { "@type": "ListItem", "position": 3, "name": "Contact", "item": "https://www.key2bhpautolocksmith.co.uk/contact-us" }
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.key2bhpautolocksmith.co.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Services",
+          "item": "https://www.key2bhpautolocksmith.co.uk/services"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Contact",
+          "item": "https://www.key2bhpautolocksmith.co.uk/contact-us"
+        }
       ]
     },
     {
@@ -147,17 +186,29 @@ const schema = {
         {
           "@type": "Question",
           "name": "Do you offer 24/7 emergency car locksmith service?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes, we operate 24/7 across Greater Manchester and surrounding areas. Call us any time and we'll get to you quickly." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes, we operate 24/7 across Greater Manchester and surrounding areas. Call us any time and we'll get to you quickly."
+          }
         },
         {
           "@type": "Question",
           "name": "Can you replace lost car keys without the original?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. We can cut and program replacement keys for most makes and models, even if you’ve lost the original." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Absolutely. We can cut and program replacement keys for most makes and models, even if you’ve lost the original."
+          }
         },
         {
           "@type": "Question",
           "name": "Which areas do you cover?",
-          "acceptedAnswer": { "@type": "Answer", "text": "We cover all of Greater Manchester including Stockport, Salford, Bury, Oldham, Rochdale, Tameside, Bolton and more." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "We cover all of Greater Manchester including Stockport, Salford, Bury, Oldham, Rochdale, Tameside, Bolton and more."
+          }
         }
       ]
     }
